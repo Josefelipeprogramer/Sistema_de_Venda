@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08-Dez-2017 às 22:15
+-- Generation Time: 14-Dez-2017 às 02:02
 -- Versão do servidor: 10.1.28-MariaDB
 -- PHP Version: 7.1.10
 
@@ -118,13 +118,14 @@ CREATE TABLE `vendedor` (
 --
 
 INSERT INTO `vendedor` (`CPF_VENDEDOR`, `NOME`, `ENDERECO`, `TELEFONE`) VALUES
-(112, 'lucas', 'phoc II', 78798944),
+(112, 'Lucas', 'phoc II', 78798944),
 (123, 'Rainan', 'phoc I', 99663322),
 (445, 'Áquila', 'Gleba E', 66988774),
 (456, 'Dynarte', 'limoeiro', 77441122),
 (654, 'Brenda Dultra', 'Inocoop', 98681288),
 (779, 'Douglas Rodrigues Aguiar de Oliveira', 'São Paulo', 41535048),
 (786, 'André Dias', 'Lama Preta', 97984656),
+(889, 'Alguém', 'Rua dos bobos', 22556699),
 (987, 'Debora', 'Mata de São João', 88552277);
 
 --

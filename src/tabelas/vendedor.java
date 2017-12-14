@@ -34,7 +34,7 @@ public class vendedor {
             int numColumns = rsmd.getColumnCount();
             if(numColumns > 0){
                 String query = "INSERT INTO vendedor(CPF_VENDEDOR, NOME, ENDERECO, TELEFONE)"
-                    + " VALUES (?, UPPER(?), ?, ?)";
+                    + " VALUES (?, ?, ?, ?)";
                 PreparedStatement preparedStmt = conn.prepareStatement(query);
                 preparedStmt.setInt (1, this.cpf);
                 preparedStmt.setString (2, this.nome);

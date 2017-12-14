@@ -23,7 +23,7 @@ public class compra {
     private double valorCompra;
     private Date dataCompra;
     
-    public void vender(String NomeVendedor){
+    public void comprar(){
         try{
             java.sql.Connection conn = Conexao.abrir();
             Date data = new Date();

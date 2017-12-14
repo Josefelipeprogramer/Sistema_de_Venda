@@ -23,13 +23,10 @@ public class venda {
     private double valorVenda;
     private Date dataVenda;
     
-    public void vender(String NomeVendedor){
+    public void vender(int cpf){
         try{
             java.sql.Connection conn = Conexao.abrir();
-            String queryV = "SELECT vendedor.CPF_VENDEDOR FROM vendedor WHERE NOME = UPPER("+ NomeVendedor +")";
-            Statement stmt = conn.createStatement();
-            ResultSet rsst = stmt.executeQuery(queryV);
-            this.cpfVendedor = rsst.getInt("CPF_VENDEDOR");
+            this.cpfVendedor = cpf;
             Date data = new Date();
             this.setDataVenda(data);
             this.valorVenda=0;
